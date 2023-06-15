@@ -23,7 +23,7 @@ library(magrittr)
 library(haven)
 library(sjlabelled)
 library(stringr)
-employee_attrition_tbl <- read.csv("C:/Users/Jeevan/OneDrive/Documents/TUHH/Business decision with Machine Learning/Business Decisions with Machine Learning/datasets-1067-1925-WA_Fn-UseC_-HR-Employee-Attrition.txt")
+employee_attrition_tbl <- read.csv("C:/Users/Jeevan/OneDrive/Documents/TUHH/Business decision with Machine Learning/Business Decisions with Machine Learning/WA_Fn-UseC_-HR-Employee-Attrition.csv")
 dept_job_role_tbl <- employee_attrition_tbl %>%
   select(EmployeeNumber, Department, JobRole, PerformanceRating, Attrition)
 dept_job_role_tbl %>%
